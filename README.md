@@ -86,7 +86,7 @@ library, and it helps me directly convert the csv into beans.
 Except the opencsv, I used the [lombok](https://projectlombok.org/) lib to simplify the construction of 
 classes. By using annotations like` @Data`, `@NoArgsConstructor`, it can add
  some code for me automatically. If you are using IDE, to avoid warnings, 
- you may want to install a plugin. 
+ you may want to install a plugin. I also used [junit](https://junit.org/junit5/) for testing.
  
 
 ## Authors
