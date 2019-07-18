@@ -28,7 +28,8 @@ public abstract class BaseTransactionAccountIndex implements
         Transaction beginPlaceholder = new Transaction(beginTime);
         Transaction endPlaceholder = new Transaction(endTime);
         SortedSet<Transaction> res =
-                accountTransactions.subSet(beginPlaceholder, endPlaceholder);
+                accountTransactions.subSet(beginPlaceholder,
+                        true, endPlaceholder, true);
         return res;
     }
 
