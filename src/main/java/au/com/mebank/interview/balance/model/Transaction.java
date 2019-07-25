@@ -18,7 +18,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Transaction implements Comparable {
+public class Transaction implements Comparable<Transaction> {
     @CsvBindByName
     private String transactionId;
 
@@ -66,7 +66,7 @@ public class Transaction implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {
-        return createdAt.compareTo(((Transaction) o).getCreatedAt());
+    public int compareTo(Transaction transaction) {
+        return createdAt.compareTo(transaction.getCreatedAt());
     }
 }

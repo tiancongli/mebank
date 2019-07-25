@@ -1,14 +1,16 @@
 package au.com.mebank.interview.balance.view.impl;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * The balance view
  * @author ltiancong@gmail.com
  * @date 2019/7/16 10:31 PM
  */
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 public class BalanceView extends BaseView {
     private double balance;

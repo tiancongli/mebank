@@ -2,14 +2,16 @@ package au.com.mebank.interview.balance.view.impl;
 
 import au.com.mebank.interview.balance.view.IView;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * The output view
  * @author ltiancong@gmail.com
  * @date 2019/7/18 10:55 AM
  */
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 public class OutputView extends BaseView {
     private static final String SEPARATOR =
